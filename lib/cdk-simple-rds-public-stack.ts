@@ -29,9 +29,9 @@ export class CdkSimpleRdsPublicStack extends cdk.Stack {
       instanceIdentifier: "new-database",
       instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3, ec2.InstanceSize.MICRO),
       vpc,
-      // vpcSubnets: {
-      //   subnetType: ec2.SubnetType.PUBLIC,
-      // },
+      vpcSubnets: {
+        subnetType: ec2.SubnetType.PUBLIC,
+      },
       storageType: rds.StorageType.GP3,
       securityGroups: [securityGroup],
       publiclyAccessible: true,
