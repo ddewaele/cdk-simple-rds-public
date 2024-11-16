@@ -6,7 +6,7 @@ This project is an AWS Cloud Development Kit (CDK) application that provisions
 
 - a public RDS PostgreSQL database.
 
-![](./docs/ec2-rds.png)
+![](./docs/diagram.png)
 
 It has the following features
 
